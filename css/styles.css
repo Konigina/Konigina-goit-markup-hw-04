@@ -95,6 +95,8 @@ body {
 
 .address-header {
 	color: var(--text-color);
+	display: flex;
+	align-items: center;
 }
 
 li .address-links {
@@ -473,6 +475,7 @@ ul.card-set {
 	margin-top: 0;
 	margin-bottom: 0;
 	margin-left: 0;
+	padding-left: 0;
 }
 
 .footer-contacts-text {
@@ -490,5 +493,9 @@ ul.card-set {
 	border-radius: 50%;
 	border-style: none;
 	background-color: var(--social-link-footer);
+}
+.footer-button:hover a,
+.footer-button:focus a {
+	border-right-color: var(--accent-color);
 }
 
