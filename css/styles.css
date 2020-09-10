@@ -126,13 +126,28 @@ li .address-links {
 .hero {
 	background-color: #2f303a;
 	line-height: 1.71;
-	/*align-items: center;
-	text-align: center;*/
-	padding-top: 200px;
-	padding-bottom: 200px;
+	max-width: 1600px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
+.overlay {
+	max-width: 1600px;
+	height: 600px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-photo.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	display: flex;
+	flex-direction: column;
 	align-items: center;
-	text-align: center;
+	justify-content: center;
 }
 
 .hero-title {
@@ -155,16 +170,13 @@ li .address-links {
 	color: var(--white-color);
 	background-color: var(--accent-color);
 	letter-spacing: 0.06em;
-	/*position: absolute;
-	width: 200px;
-	height: 50px;
-	left: 700px;
-	top: 430px;*/
 	border-radius: 4px;
 	border: 1px solid transparent;
 	padding: 10px 32px;
 	min-width: 200px;
+	height: 50px;
 	text-align: center;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button:hover,
@@ -199,11 +211,30 @@ li .address-links {
 	list-style: none;
 	margin-top: 0;
 	margin-bottom: 0;
-	margin-left: -30px;
+	margin-left: 0px;
 	margin-right: 0;
-
+	padding-left: 0;
 	display: flex;
 	align-items: center;
+}
+
+.features-list-main {
+	max-width: 270px;
+	height: 251px;
+}
+
+.features-list-block {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
+	width: 270px;
+	height: 120px;
+	background-color: var(--filter-button-bcg);
+}
+
+.features-list-image {
+	display: block;
 }
 
 .our-team-section {
@@ -212,6 +243,10 @@ li .address-links {
 	margin-top: 0;
 	margin-bottom: 0;
 	background-color: var(--filter-button-bcg);
+	max-width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 708px;
 }
 
 .list-item-main li:not(:first-child) {
@@ -233,12 +268,72 @@ li .address-links {
 	text-align: center;
 }
 
+.team-list {
+	width: 270px;
+	height: 120px;
+}
+
+.team-social-links {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 206px;
+	height: 44px;
+}
+
+.team-social-links > li.team-social-link-button {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.team-social-links-image {
+	fill: var(--our-clients-section);
+}
+
+.team-social-link-button:not(:last-child) {
+	margin-right: 10px;
+}
+
+.team-button {
+	width: 44px;
+	height: 44px;
+	border: 1px solid transparent;
+	border-radius: 50%;
+	background-color: var(--white-color);
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.team-list-item {
+	width: 270px;
+	height: 428px;
+	background-color: var(--white-color);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+}
+
+.link-for-team-social-link > .team-button:hover,
+.link-for-team-social-link > .team-button:focus {
+	background-color: var(--accent-color);
+	fill: var(--white-color);
+}
+
+link-for-team-social-link > .team-button:hover svg {
+	fill: var(--white-color);
+}
+
 .heading {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;
 	text-align: center;
 	color: var(--subheading-color);
+	margin-bottom: 50px;
 }
 
 .image-heading {
@@ -463,6 +558,10 @@ ul.card-set {
 	list-style: none;
 }
 
+.footer-button:not(:last-child) {
+	margin-right: 10px;
+}
+
 .contacts-footer {
 	margin-left: 0px;
 	margin-right: auto;
@@ -495,10 +594,12 @@ ul.card-set {
 	border-style: none;
 	background-color: var(--social-link-footer);
 }
-.footer-button:hover a,
-.footer-button:focus a {
-	border-right-color: var(--accent-color);
+
+.footer-button-link > .button-in-footer:hover,
+.footer-button-link > .button-in-footer:focus {
+	background-color: var(--accent-color);
 }
+
 
 .our-clients-section {
 	padding-top: 94px;
@@ -511,13 +612,15 @@ ul.card-set {
 	/*display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-top: 0;
-	margin-bottom: 0;
 	margin-left: 0;
 	margin-right: 0;*/
 	list-style: none;
 	padding-left: 0;
 	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .our-clients-list-item {
@@ -545,5 +648,4 @@ ul.card-set {
 	fill: #AFB1B8;
 }
 	
-var(--our-clients-section)
-AFB1B8
+
