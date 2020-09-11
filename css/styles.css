@@ -620,6 +620,9 @@ ul.card-set {
 	border: 1px solid var(--our-clients-section);
 	border-radius: 4px;
 	padding-left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .our-clients-list-item:not(:last-child) {
@@ -634,7 +637,11 @@ ul.card-set {
 }
 
 .our-clients-icon {
-	fill: #AFB1B8;
+	fill: var(--our-clients-section);
 }
 	
 
+.our-clients-link:focus > .our-clients-icon,
+.our-clients-link:hover > .our-clients-icon {
+	fill: var(--accent-color);
+}
