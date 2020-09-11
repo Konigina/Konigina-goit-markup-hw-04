@@ -315,10 +315,8 @@ li .address-links {
 .link-for-team-social-link > .team-button:hover,
 .link-for-team-social-link > .team-button:focus {
 	background-color: var(--accent-color);
-	fill: var(--white-color);
 }
-
-link-for-team-social-link > .team-button:hover svg {
+.link-for-team-social-link > .team-button:hover >.team-social-links-image {
 	fill: var(--white-color);
 }
 
@@ -604,10 +602,7 @@ ul.card-set {
 }
 
 .our-clients-list {
-	/*display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-left: 0;
+	/*margin-left: 0;
 	margin-right: 0;*/
 	list-style: none;
 	padding-left: 0;
@@ -623,7 +618,6 @@ ul.card-set {
 	height: 90px;
 	background-color: var(--white-color);
 	border: 1px solid var(--our-clients-section);
-	box-sizing: border-box;
 	border-radius: 4px;
 	padding-left: 0;
 }
