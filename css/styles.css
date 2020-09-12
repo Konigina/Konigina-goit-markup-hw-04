@@ -524,17 +524,20 @@ ul.card-set {
 	width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
-	align-items: flex-start;
+	align-items: baseline;
+	justify-content: start;
 }
 
 .logo-container {
 	padding-left: 0;
 	padding-right: 70px;
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 0;
+	padding-bottom: 0;
 	margin-left: 0;
 	margin-right: 0;
 }
@@ -566,8 +569,6 @@ ul.card-set {
 .contacts-footer {
 	margin-left: 0px;
 	margin-right: auto;
-	margin-top: 72px;
-	margin-bottom: 100px;
 }
 
 .footer-button-list {
@@ -649,18 +650,13 @@ ul.card-set {
 }
 	
 
-.our-clients-link:focus > .our-clients-icon,
-.our-clients-link:hover > .our-clients-icon {
+.our-clients-list-item:focus .our-clients-icon,
+.our-clients-list-item:hover .our-clients-icon {
 	fill: var(--accent-color);
 }
 
-.our-clients-link:focus > .our-clients-list-item,
-.our-clients-link:hover > .our-clients-list-item {
-	border: 1px solid var(--accent-color);
-}
-
-/*.our-clients-list-item:focus,
+.our-clients-list-item:focus,
 .our-clients-list-item:hover {
-	border: 1px solid var(--accent-color);
-	fill: var(--accent-color);
-}*/
+	border-color: var(--accent-color);
+}
+
